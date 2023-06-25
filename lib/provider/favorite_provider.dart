@@ -6,6 +6,14 @@ import '../ui_components/messages/all_messages/bubble_message/message_2.dart';
 import '../ui_components/messages/all_messages/bubble_message/message_3.dart';
 import '../ui_components/messages/all_messages/bubble_message/message_4.dart';
 
+import 'package:flutter_component_ui/ui_components/labels/all_labels/basic_label.dart/basic_label.dart';
+import 'package:flutter_component_ui/ui_components/labels/all_labels/action_label/action_label.dart';
+import 'package:flutter_component_ui/ui_components/buttons/all_buttons/animated_button/button11.dart';
+import 'package:flutter_component_ui/ui_components/buttons/all_buttons/animated_button/button12.dart';
+import 'package:flutter_component_ui/ui_components/labels/all_labels/choice_label/choice_label.dart';
+import 'package:flutter_component_ui/ui_components/labels/all_labels/filter_label/filter_label.dart';
+import 'package:flutter_component_ui/ui_components/labels/all_labels/input_label/input_labels.dart';
+
 Color? color;
 
 class FavoritesProvider extends ChangeNotifier {
@@ -642,6 +650,89 @@ class FavoritesProvider extends ChangeNotifier {
         maxHeight: 100.0,
       ),
       child: const Bottom_Navbar4(),
+    ),
+    80: Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 12,
+        vertical: 8,
+      ),
+      constraints: const BoxConstraints(
+        minWidth: 400.0, // Set the minimum width constraint
+        maxWidth: 500.0, // Set the maximum width constraint
+        minHeight: 50.0, // Set the minimum height constraint
+        maxHeight: 70.0, // Set the maximum height constraint
+      ),
+      child: const BasicChipWidget(
+          basicChipLabel: 'Basic Chip', chipColor: Colors.blueAccent),
+    ),
+
+    81: Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 12,
+        vertical: 8,
+      ),
+      constraints: const BoxConstraints(
+        minWidth: 400.0, // Set the minimum width constraint
+        maxWidth: 500.0, // Set the maximum width constraint
+        minHeight: 50.0, // Set the minimum height constraint
+        maxHeight: 70.0, // Set the maximum height constraint
+      ),
+      child: const ActionLabels(),
+    ),
+    82: Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 12,
+        vertical: 8,
+      ),
+      constraints: const BoxConstraints(
+        minWidth: 400.0, // Set the minimum width constraint
+        maxWidth: 500.0, // Set the maximum width constraint
+        minHeight: 50.0, // Set the minimum height constraint
+        maxHeight: 70.0, // Set the maximum height constraint
+      ),
+      child: const InputLables(),
+    ),
+    83: Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 12,
+        vertical: 8,
+      ),
+      constraints: const BoxConstraints(
+        minWidth: 400.0, // Set the minimum width constraint
+        maxWidth: 500.0, // Set the maximum width constraint
+        minHeight: 50.0, // Set the minimum height constraint
+        maxHeight: 70.0, // Set the maximum height constraint
+      ),
+      child: const ChoiceChipWidget(),
+    ),
+    84: Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 12,
+        vertical: 8,
+      ),
+      constraints: const BoxConstraints(
+        minWidth: 400.0, // Set the minimum width constraint
+        maxWidth: 500.0, // Set the maximum width constraint
+        minHeight: 50.0, // Set the minimum height constraint
+        maxHeight: 70.0, // Set the maximum height constraint
+      ),
+      child: const FilterChipWidget(),
+    ),
+    85: Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 12,
+        vertical: 8,
+      ),
+      width: double.infinity,
+      child: const Button11("button"),
+    ),
+    86: Container(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 12,
+        vertical: 8,
+      ),
+      width: double.infinity,
+      child: const Button12("button"),
     ),
   };
 
