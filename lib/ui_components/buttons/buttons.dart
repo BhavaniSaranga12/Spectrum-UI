@@ -53,7 +53,6 @@ class _ButtonScreenState extends State<ButtonScreen> {
     const Button12("button"),
   ];
 
-  List<Color?> customAnimatedButtonColor = [null, null];
 
   @override
   Widget build(BuildContext context) {
@@ -276,14 +275,16 @@ class _ButtonScreenState extends State<ButtonScreen> {
                               GestureDetector(
                                 onTap: () {
                                   favProviderModel
-                                      .add(customTextButtonIndex[index]);
-                                  setState(() {
-                                    customTextButtonColor[index] = Colors.amber;
-                                  });
+                                      .add(customAnimatedButtonIndex[index]);
+                                  setState(() {  });
                                 },
                                 child: Icon(
                                   Icons.star_border_outlined,
-                                  color: customAnimatedButtonColor[index],
+                                  color: (favProviderModel.starred(
+                                    customAnimatedButtonIndex[index],
+                                  ))
+                                      ? Colors.amber
+                                      : null,
                                 ),
                               ),
                             ],
